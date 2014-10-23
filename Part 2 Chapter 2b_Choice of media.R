@@ -1,7 +1,7 @@
-### Part 2, Chapter 3a
+### Part 2, Chapter 3b
 ## SCENARIO:
 ## CHOICE OF MEDIA
-# Loading the sjPlot package to conveniently import the SAV file with all of the necessary data. This package also contains a function for creating contingency tables.
+# Loading the sjPlot package to conveniently import the SAV file with all of the necessary data. This package has a useful function for creating contingency tables.
 require(sjPlot)
 
 # Importing the data as object to be used in R. 
@@ -61,4 +61,6 @@ sjt.xtab(data_total_R$Mosaic_media_frequency_4_NET, data_total_R$FacebookVisitsQ
 
 ## visiting frequency for FacebookFriendsQuintiles
 # Table 8: Facebook visiting frequency among FB users, segmented by number of friends
-sjt.xtab(data_total_R$Mosaic_SocialMedia_FrequencyVisit_0, data_total_R$FacebookFriendsQuintiles, showExpected=F, showRowPerc=F, showCellPerc=F, showColPerc=TRUE, showLegend=F)
+sjt.xtab(data_total_R$Mosaic_SocialMedia_FrequencyVisit_0_NET, data_total_R$FacebookFriendsQuintiles, showExpected=F, showRowPerc=F, showCellPerc=F, showColPerc=TRUE, showLegend=F)
+
+rm(list = ls())

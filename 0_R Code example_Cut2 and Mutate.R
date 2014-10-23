@@ -1,4 +1,5 @@
 ## Simple segmentation based on Quintiles 
+# This script serves as example for some R functions and the underlying "grammar" of the language.
 # R comes with some in-built datasets that users can practice functions on. In this case, the "mtcars" dataset will serve as example for how to create a segmentation based on quintiles for the miles per gallon variable from this dataset.
 
 # Looking at the MPG variable in the dataset mtcars. This function returns the minimum, maximum, 1st and 3rd quartile, mean, and median of this continuous variable.
