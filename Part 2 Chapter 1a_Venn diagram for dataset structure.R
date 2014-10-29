@@ -26,4 +26,4 @@ venn.plot <- draw.pairwise.venn(area1        = 2688,
                                 ext.line.lty = "dashed") # justification and positioning parameters
 dev.off() # wrapper for creating a high-quality TIFF graphic
 
-rm(list = ls())
+rm(list = ls()) # empty work environment

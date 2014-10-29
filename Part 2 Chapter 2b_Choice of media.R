@@ -106,4 +106,4 @@ sjt.xtab(data_total_R$Mosaic_SocialMedia_FrequencyVisit_0_NET,
          showColPerc=T, 
          showLegend=F)
 
-rm(list = ls())
+rm(list = ls()) # empty work environment

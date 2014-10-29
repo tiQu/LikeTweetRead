@@ -147,4 +147,4 @@ ggplot(na.omit(FBVisitsLocalN),
   coord_flip()
 dev.off() # wrapper for creating a high-quality tiff graphic
 
-rm(list = ls())
+rm(list = ls()) # empty work environment

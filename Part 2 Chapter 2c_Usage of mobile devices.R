@@ -252,4 +252,4 @@ ggplot(data_total_R,
   ylim(0,500) # set the y limit to 500
 dev.off() # wrapper for creating a high-quality TIFF graphic
 
-rm(list = ls())
+rm(list = ls()) # empty work environment

@@ -128,4 +128,4 @@ sjt.xtab(data_total_R_table$FacebookVisitsThirds,
          showColPerc=T, 
          showLegend=F) # determining which percentages / labels should be in the output
 
-rm(list = ls())
+rm(list = ls()) # empty work environment
