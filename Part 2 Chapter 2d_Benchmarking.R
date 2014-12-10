@@ -42,7 +42,8 @@ ggplot(na.omit(FBLikesGlobeMail), # pointing R to the data frame of interest, om
   xlab("Facebook Likes") +
   ylab("") + # axis titles
   scale_y_continuous(labels  = percent) + # show percentages instead of frequencies
-  coord_flip() # use horizontal bars
+  coord_flip() + # use horizontal bars
+  scale_fill_manual(values=c("seagreen", "skyblue")) # use colour blind friendly scheme for bars
 dev.off() # wrapper for creating a high-quality tiff graphic
 
 # The same procedure can be used for all the other plots in this chapter.
@@ -68,7 +69,8 @@ ggplot(na.omit(FBUpdatesGlobeMail),
   xlab("Facebook Updates") +
   ylab("") +
   scale_y_continuous(labels  = percent) + 
-  coord_flip()
+  coord_flip() + # use horizontal bars
+  scale_fill_manual(values=c("seagreen", "skyblue")) # use colour blind friendly scheme for bars
 dev.off() # wrapper for creating a high-quality tiff graphic
 
 # FIGURE 15 - 16: HUFFINGTONPOST.cA (READERSHIP VS FACEBOOK ENGAGEMENT AND ACTIVITY)
@@ -94,7 +96,8 @@ ggplot(na.omit(FBLikesHuffPo),
   xlab("Facebook Likes") +
   ylab("") +
   scale_y_continuous(labels  = percent) + 
-  coord_flip()
+  coord_flip() + # use horizontal bars
+  scale_fill_manual(values=c("seagreen", "skyblue")) # use colour blind friendly scheme for bars
 dev.off() # wrapper for creating a high-quality tiff graphic
 
 FBUpdatesHuffPo <- data.frame(data_total_R$FacebookUpdatesThirds,
@@ -118,7 +121,8 @@ ggplot(na.omit(FBUpdatesHuffPo),
   xlab("Facebook Updates") +
   ylab("") +
   scale_y_continuous(labels  = percent) + 
-  coord_flip()
+  coord_flip() + # use horizontal bars
+  scale_fill_manual(values=c("seagreen", "skyblue")) # use colour blind friendly scheme for bars
 dev.off() # wrapper for creating a high-quality tiff graphic
 
 # FIGURE 17: RESPONDENTS' LOCAL NEWSPAPER'S WEBSITE (READERSHIP VS FACEBOOK ENGAGEMENT)
@@ -144,7 +148,8 @@ ggplot(na.omit(FBVisitsLocalN),
   xlab("Facebook visits per week") +
   ylab("") +
   scale_y_continuous(labels  = percent) + 
-  coord_flip()
+  coord_flip() + # use horizontal bars
+  scale_fill_manual(values=c("seagreen", "skyblue")) # use colour blind friendly scheme for bars
 dev.off() # wrapper for creating a high-quality tiff graphic
 
 rm(list = ls()) # empty work environment
